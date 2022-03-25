@@ -28,7 +28,7 @@ const Navbar = (props) =>{
     <>
         <DrawerLeft open={stateDrawer} toggleDrawer={()=>{setStateDrawer(false)}}/>
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="fixed">
+            <AppBar position="fixed" elevation={4}>
                 <Toolbar>
                     <IconButton
                         size="large"
