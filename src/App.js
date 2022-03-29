@@ -8,6 +8,7 @@ function App() {
   const themeProvider = createTheme({
     palette: {
         white:'#fff',
+        gray:'#546e7a',
         primary: {
           light: '#48a999',
           main: '#00796b',

@@ -6,7 +6,19 @@ import {Typography} from '@mui/material'
 const useStyles = makeStyles(theme=>({
     banner:{
         aspectRatio:'2/1',
-        height:'200px'
+        height:'250px'
+    },
+    box:{
+      position:'absolute',
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center',
+      width:'100%',
+      height:'100%',
+      backgroundColor:'#000000c7'
+    },
+    image:{
+      height:'150px'
     }
 }))
 const Banner = () => {
@@ -14,10 +26,10 @@ const Banner = () => {
     return (
       <ParallaxBanner
         className={classes.banner}
-        layers={[{ image: 'https://www.gilbarco.com/la/sites/gilbarco.com.la/files/article/images/montar-posto-de-gasolina-1.jpg', speed: -15 }]}
+        layers={[{ image: 'https://www.gilbarco.com/la/sites/gilbarco.com.la/files/article/images/montar-posto-de-gasolina-1.jpg', speed: -25 }]}
       >
-        <div className="absolute inset-0 flex items-center justify-center">
-            <h1 className="text-8xl text-white font-thin">Hello World!</h1>
+        <div className={classes.box}>
+          <img src={require('../Images/logo.png')} alt="" className={classes.image}/>
         </div>
     </ParallaxBanner>
     );
